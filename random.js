@@ -1,9 +1,5 @@
 const randomNum = (a, b) => {
-  let num = Math.random() * 10;
-  if (num > 5) {
-    return a;
-  }
-  return b;
+   return Math.floor(Math.random() * (a - b) + 1) + b;
 };
 
 module.exports = randomNum;
